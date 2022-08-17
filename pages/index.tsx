@@ -1,15 +1,6 @@
-import {
-  Box,
-  Center,
-  Divider,
-  Flex,
-  Heading,
-  HStack,
-  Text
-} from '@chakra-ui/react'
+import { Box, Divider, Flex, Heading, Text } from '@chakra-ui/react'
 import NextImage from 'next/image'
 
-import Logo from '../public/logo.png'
 import Airplane from '../public/airplane.svg'
 import Cocktail from '../public/cocktail.svg'
 import Building from '../public/building.svg'
@@ -17,6 +8,7 @@ import Earth from '../public/earth.svg'
 import Museum from '../public/museum.svg'
 import Surf from '../public/Surf.svg'
 import Slider from '../components/Slider'
+import Header from '../components/Header/Header'
 
 const continents = [
   {
@@ -54,9 +46,7 @@ const continents = [
 export default function Home() {
   return (
     <Box>
-      <Center height={100}>
-        <NextImage src={Logo} alt="Logo" />
-      </Center>
+      <Header isHome />
       <Flex
         bgImage="url('/background.png')"
         backgroundSize="cover"

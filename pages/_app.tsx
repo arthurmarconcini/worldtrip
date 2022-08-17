@@ -9,6 +9,9 @@ const theme = extendTheme({
     global: {
       'html, body': {
         fontFamily: 'Poppins, sans-serif'
+      },
+      a: {
+        textDecoration: 'none'
       }
     }
   },
@@ -21,7 +24,11 @@ const theme = extendTheme({
       200: '#F5F8FA'
     },
     dark: {
+      50: '#999999',
       100: '#47585B'
+    },
+    highlight: {
+      100: '#FFBA08'
     }
   }
 })
